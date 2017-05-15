@@ -1,0 +1,39 @@
+<div class="title-wrap">
+    <div class="container">
+        <div class="heading">
+          Média Geral: 
+          <span class="glyphicon glyphicon-star"></span>
+         {{movie.vote_average}}
+        </div>
+    </div>
+</div>
+
+
+<div class="wrap">
+    <div class="container">
+        <div class="col-md-12 movie">
+            <div class="col-md-6">
+                <figure>
+                    <img  class="img-responsive" src="https://image.tmdb.org/t/p/w500/{{movie.poster_path}}" alt="Titulo">
+                </figure>
+            </div>
+            <div class="col-md-6">
+                <div class="col-md-12 top-info">
+                    <div class="col-md-6 popularity">Popularidade: {{movie.popularity | popularity}}</div>
+                    <div class="col-md-6 year">Ano de Lançamento: {{movie.release_date| date: 'yyyy'}}</div>
+                </div>
+                <div class="col-md-12 title">
+                    <h2 class="title-item"> {{movie.title}}</h2>
+                </div>
+                <div class="col-md-12 genre">
+                    <span class="genre-item" *ngFor="let genre of movie.genres">
+                        {{genre.name}}
+                    </span>
+                </div>
+                <div class="col-md-12 overview">
+                    <p class="overview-item">{{movie.overview}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

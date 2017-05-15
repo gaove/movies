@@ -1,0 +1,62 @@
+.movie{
+    background-color:#e6e2c3;
+    padding:1em;
+    border:2em solid #dece5b;
+    min-height:1000px;
+    color:#6d6d6d;
+    text-align: center;
+}
+
+.heading {
+    background-color: #5b65de;
+    color: #bec1e6;
+}
+
+.title-wrap{padding-bottom:0;}
+
+.glyphicon-star:before{
+    color:yellow;
+}
+
+.title{
+    font-family: 'Oswald', sans-serif;
+    margin-bottom: 0.5em;
+    margin-top: 0.5em;
+    background-color: #41b39e;
+    padding: 0.01em;
+    color: rgba(255, 255, 255, 0.69);
+    text-align: center;
+    height:70px;
+}
+    .title-item{font-size:1em;}
+
+.top-info, .popularity, .year, .genre, .overview{
+    padding: 0.5em 0 0 0;
+}
+
+.genre{ min-height:60px;}
+    .genre-item{
+        background-color: #ff0b4f;
+        margin-right: 0.5em;
+        margin-bottom: 1em;
+        padding: 1em;
+        color: #fff;
+        display:block;
+    }
+
+.overview p .overview-item {
+    margin: 0 0 10px;
+    font-size: 1.2em;
+    font-weight: 300;
+}
+
+@media screen and (min-width: 768px) {
+    .title-item{font-size:2em;}
+    .genre-item{display:inline-block;}
+    .movie img{margin:0 auto;}
+}
+
+@media screen and (min-width: 991px) {
+    .movie{text-align: justify;}
+    .year{text-align: right;}
+}

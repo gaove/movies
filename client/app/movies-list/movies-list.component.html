@@ -1,0 +1,25 @@
+<div class="title-wrap">
+    <div class="container">
+        <div class="heading">
+         Filmes em Destaque
+        </div>
+    </div>
+</div>
+
+<div class="gap wrap">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 col-sm-3 movie" *ngFor="let movie of movies">
+                <a [routerLink]="['/movie', movie.id]">
+                    <figure>
+                        <img src="https://image.tmdb.org/t/p/w500/{{movie.poster_path}}" alt="{{movie.title}}">
+                    </figure> 
+                    <div class="vote">
+                        <span class="glyphicon glyphicon-star"></span><br>
+                        <span>{{movie.vote_average}}</span>
+                    </div>             
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
